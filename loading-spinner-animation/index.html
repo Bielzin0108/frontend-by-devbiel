@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Loading Spinner Animation</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="stage">
+    <section class="loader-card">
+      <p class="eyebrow">Animação em CSS</p>
+      <h1>Carregadores animados</h1>
+      <p class="intro">Três animações de carregamento limpas feitas com CSS puro. Use os controles para pausar ou mudar a velocidade.</p>
+
+      <div class="loader-grid">
+        <div class="loader-box">
+          <div class="ring-loader" aria-label="Carregador em anel"></div>
+          <span>Anel</span>
+        </div>
+        <div class="loader-box">
+          <div class="dot-loader" aria-label="Carregador de pontos">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <span>Pontos</span>
+        </div>
+        <div class="loader-box">
+          <div class="bar-loader" aria-label="Carregador de barras">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <span>Barras</span>
+        </div>
+      </div>
+
+      <div class="controls">
+        <button id="pauseButton" type="button">Pausar</button>
+        <button id="speedButton" type="button">Rápido</button>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

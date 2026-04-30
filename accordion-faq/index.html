@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Accordion FAQ</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="page">
+    <section class="faq-shell">
+      <div class="faq-copy">
+        <p class="eyebrow">Componente de FAQ</p>
+        <h1>Perguntas em acordeão</h1>
+        <p>Clique em uma pergunta para revelar a resposta. O componente mantém um item aberto por vez.</p>
+      </div>
+
+      <div class="accordion" id="accordion">
+        <article class="accordion-item open">
+          <button class="accordion-trigger" type="button" aria-expanded="true">
+            Como reutilizar este componente?
+            <span>+</span>
+          </button>
+          <div class="accordion-panel">
+            <p>Copie a estrutura HTML, as classes CSS e o script para qualquer projeto simples. Cada pergunta é um bloco.</p>
+          </div>
+        </article>
+
+        <article class="accordion-item">
+          <button class="accordion-trigger" type="button" aria-expanded="false">
+            Posso abrir várias respostas?
+            <span>+</span>
+          </button>
+          <div class="accordion-panel">
+            <p>Sim. Remova a linha que fecha os outros itens no script e cada resposta será alternada de forma independente.</p>
+          </div>
+        </article>
+
+        <article class="accordion-item">
+          <button class="accordion-trigger" type="button" aria-expanded="false">
+            Isso funciona bem no mobile?
+            <span>+</span>
+          </button>
+          <div class="accordion-panel">
+            <p>O layout foi pensado primeiro para telas pequenas, usa espaçamento flexível e mantém o texto legível no celular.</p>
+          </div>
+        </article>
+
+        <article class="accordion-item">
+          <button class="accordion-trigger" type="button" aria-expanded="false">
+            Precisa de biblioteca?
+            <span>+</span>
+          </button>
+          <div class="accordion-panel">
+            <p>Nenhuma biblioteca é necessária. A animação usa linhas de grid no CSS e poucas linhas de JavaScript.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

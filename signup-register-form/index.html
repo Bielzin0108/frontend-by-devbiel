@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign Up Register Form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="shell">
+    <section class="visual-panel">
+      <div class="stack-card card-one">
+        <span>01</span>
+        <strong>Criar</strong>
+      </div>
+      <div class="stack-card card-two">
+        <span>02</span>
+        <strong>Lançar</strong>
+      </div>
+      <div class="stack-card card-three">
+        <span>03</span>
+        <strong>Crescer</strong>
+      </div>
+    </section>
+
+    <section class="form-panel" aria-labelledby="signup-title">
+      <p class="kicker">Comece grátis hoje</p>
+      <h1 id="signup-title">Crie sua conta</h1>
+      <p class="subtitle">Entre no painel e construa sua próxima ideia mais rápido.</p>
+
+      <form id="signupForm" novalidate>
+        <label class="field">
+          <span>Nome completo</span>
+          <input id="name" type="text" placeholder="Ana Silva" autocomplete="name">
+          <small class="error"></small>
+        </label>
+
+        <label class="field">
+          <span>Endereço de e-mail</span>
+          <input id="email" type="email" placeholder="ana@exemplo.com" autocomplete="email">
+          <small class="error"></small>
+        </label>
+
+        <label class="field">
+          <span>Senha</span>
+          <input id="password" type="password" placeholder="Crie uma senha forte" autocomplete="new-password">
+          <small class="error"></small>
+        </label>
+
+        <label class="field">
+          <span>Confirmar senha</span>
+          <input id="confirmPassword" type="password" placeholder="Repita sua senha" autocomplete="new-password">
+          <small class="error"></small>
+        </label>
+
+        <label class="terms">
+          <input id="terms" type="checkbox">
+          <span>Eu aceito os termos e a política de privacidade.</span>
+        </label>
+        <small class="terms-error" id="termsError"></small>
+
+        <button type="submit">Criar conta</button>
+        <p class="result" id="result" role="status"></p>
+      </form>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

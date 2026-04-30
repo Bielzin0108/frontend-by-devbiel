@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Slider Carousel</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="page">
+    <section class="carousel-shell" aria-labelledby="carousel-title">
+      <div class="carousel-copy">
+        <p class="eyebrow">Carrossel de imagens</p>
+        <h1 id="carousel-title">Carrossel de lugares incríveis</h1>
+        <p>Use as setas, os pontos, o teclado ou aguarde a reprodução automática.</p>
+      </div>
+
+      <div class="carousel" aria-live="polite">
+        <div class="slides" id="slides">
+          <article class="slide active">
+            <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80" alt="Praia com oceano azul">
+            <div class="caption">
+              <span>Litoral</span>
+              <h2>Costa cristalina</h2>
+            </div>
+          </article>
+          <article class="slide">
+            <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=1200&q=80" alt="Paisagem de montanha com lago">
+            <div class="caption">
+              <span>Montanha</span>
+              <h2>Luz alpina</h2>
+            </div>
+          </article>
+          <article class="slide">
+            <img src="https://images.unsplash.com/photo-1493246507139-91e8fad9978e?auto=format&fit=crop&w=1200&q=80" alt="Trilha em floresta verde">
+            <div class="caption">
+              <span>Floresta</span>
+              <h2>Trilha tranquila</h2>
+            </div>
+          </article>
+        </div>
+
+        <button class="control prev" id="prevSlide" aria-label="Slide anterior">&lt;</button>
+        <button class="control next" id="nextSlide" aria-label="Próximo slide">&gt;</button>
+        <div class="dots" id="dots" aria-label="Controles dos slides"></div>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

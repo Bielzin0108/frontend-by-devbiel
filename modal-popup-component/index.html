@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Modal Popup Component</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="hero">
+    <section class="panel">
+      <p class="eyebrow">Componente reutilizável</p>
+      <h1>Modal com efeito de vidro</h1>
+      <p class="copy">Uma janela limpa com camada de fundo, fechamento pelo teclado e movimento sutil.</p>
+      <button class="primary-button" id="openModal">Abrir modal</button>
+    </section>
+  </main>
+
+  <div class="modal-backdrop" id="modalBackdrop" hidden>
+    <section class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <button class="close-button" id="closeModal" aria-label="Fechar modal">&times;</button>
+      <div class="modal-icon">i</div>
+      <h2 id="modalTitle">Checklist de lançamento</h2>
+      <p>Use este componente para boletins, confirmações, prévias de recursos ou pequenos fluxos de apresentação inicial.</p>
+      <div class="actions">
+        <button class="secondary-button" id="cancelModal">Cancelar</button>
+        <button class="primary-button">Continuar</button>
+      </div>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

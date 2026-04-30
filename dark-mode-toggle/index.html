@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dark Mode Toggle</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="app">
+    <section class="dashboard-card">
+      <header class="topbar">
+        <div>
+          <p class="eyebrow">Alternador de tema</p>
+          <h1>Painel com modo escuro</h1>
+        </div>
+
+        <button class="theme-toggle" id="themeToggle" type="button" aria-label="Mudar para modo escuro">
+          <span class="toggle-thumb"></span>
+        </button>
+      </header>
+
+      <div class="stats-grid">
+        <article>
+          <span>Receita</span>
+          <strong>$24.8k</strong>
+          <small>+18.2% esta semana</small>
+        </article>
+        <article>
+          <span>Visitantes</span>
+          <strong>42.1k</strong>
+          <small>+9.4% esta semana</small>
+        </article>
+        <article>
+          <span>Pedidos</span>
+          <strong>1,284</strong>
+          <small>+12.7% esta semana</small>
+        </article>
+      </div>
+
+      <div class="chart-card" aria-label="Gráfico decorativo de análises">
+        <span style="height: 44%"></span>
+        <span style="height: 72%"></span>
+        <span style="height: 52%"></span>
+        <span style="height: 86%"></span>
+        <span style="height: 64%"></span>
+        <span style="height: 94%"></span>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

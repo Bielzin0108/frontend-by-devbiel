@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Notification Toast System</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="page">
+    <section class="toast-demo">
+      <p class="eyebrow">Sistema de notificações</p>
+      <h1>Notificações flutuantes</h1>
+      <p class="intro">Dispare notificações reutilizáveis de sucesso, informação, alerta e erro com progresso de fechamento automático.</p>
+
+      <div class="button-grid">
+        <button type="button" data-toast="success">Sucesso</button>
+        <button type="button" data-toast="info">Informação</button>
+        <button type="button" data-toast="warning">Alerta</button>
+        <button type="button" data-toast="error">Erro</button>
+      </div>
+    </section>
+  </main>
+
+  <div class="toast-stack" id="toastStack" aria-live="polite" aria-label="Notificações"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>

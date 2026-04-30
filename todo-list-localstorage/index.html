@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>To-Do List LocalStorage</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="app">
+    <section class="todo-card" aria-labelledby="todo-title">
+      <header>
+        <p class="eyebrow">Aplicativo com armazenamento local</p>
+        <h1 id="todo-title">Lista de hoje</h1>
+        <p class="date" id="dateLabel"></p>
+      </header>
+
+      <form class="todo-form" id="todoForm">
+        <input id="todoInput" type="text" placeholder="Adicione uma tarefa focada" autocomplete="off">
+        <button type="submit">Adicionar</button>
+      </form>
+
+      <div class="filters" aria-label="Filtros de tarefas">
+        <button class="active" type="button" data-filter="all">Todas</button>
+        <button type="button" data-filter="active">Ativas</button>
+        <button type="button" data-filter="completed">Concluídas</button>
+      </div>
+
+      <ul class="todo-list" id="todoList"></ul>
+      <p class="empty-state" id="emptyState">Nenhuma tarefa ainda. Adicione uma acima.</p>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

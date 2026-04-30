@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Modern Login Form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="page">
+    <section class="login-card" aria-labelledby="login-title">
+      <div class="brand-badge">NOVA</div>
+      <p class="eyebrow">Bem-vindo de volta</p>
+      <h1 id="login-title">Entre no seu espaço de trabalho</h1>
+      <p class="intro">Informe seus dados para continuar de onde parou.</p>
+
+      <form id="loginForm" novalidate>
+        <label class="field">
+          <span>Endereço de e-mail</span>
+          <input id="email" type="email" placeholder="voce@exemplo.com" autocomplete="email">
+          <small class="error-message"></small>
+        </label>
+
+        <label class="field password-field">
+          <span>Senha</span>
+          <div class="password-wrap">
+            <input id="password" type="password" placeholder="Pelo menos 6 caracteres" autocomplete="current-password">
+            <button class="ghost-button" type="button" id="togglePassword" aria-label="Mostrar senha">Mostrar</button>
+          </div>
+          <small class="error-message"></small>
+        </label>
+
+        <div class="form-row">
+          <label class="remember">
+            <input type="checkbox">
+            <span>Lembrar de mim</span>
+          </label>
+          <a href="#">Esqueceu a senha?</a>
+        </div>
+
+        <button class="submit-button" type="submit">Entrar</button>
+        <p class="success-message" id="successMessage" role="status"></p>
+      </form>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
